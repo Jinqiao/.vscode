@@ -1,0 +1,30 @@
+{
+    // Theme
+    "workbench.colorTheme": "Quiet Light",
+    // Font
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+
+    // python
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E402,F841,F401,E302,E305,E265",
+    ],
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": ["--style", "{based_on_style: chromium, indent_width: 4}"],
+
+    // start bash, not the mintty, or you'll get a new window
+    "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\bash.exe",
+    // Use this to keep bash from doing a 'cd ${HOME}'
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1"
+    },
+    // Make it a login shell
+    "terminal.integrated.shellArgs.windows": ["-l"],
+    
+    "git.path": "C:\\cygwin64\\bin\\git.exe",
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "python.dataScience.askForKernelRestart": false,
+}

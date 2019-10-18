@@ -1,0 +1,13 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+v",
+        "command": "-emacs-mcx.scrollUpCommand",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+    }
+]
